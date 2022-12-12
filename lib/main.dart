@@ -3,11 +3,13 @@ import 'package:get_it_tutorial/locator.dart';
 import 'package:get_it_tutorial/view/home_page.dart';
 
 void main() {
-  setup();
-  runApp(MyApp());
+  setupLocator();
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePageView(),
+      home: const HomePageView(),
     );
   }
 }

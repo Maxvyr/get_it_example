@@ -4,7 +4,7 @@ import 'package:get_it_tutorial/repository/meme_repo.dart';
 
 final GetIt getIt = GetIt.instance;
 
-void setup() {
+void setupLocator() {
   getIt.registerLazySingleton<MemeRepo>(
     () => MemeRepo(),
   );
